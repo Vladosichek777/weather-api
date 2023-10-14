@@ -1,0 +1,51 @@
+.main-info {
+  display: flex;
+  padding: 3%;
+  &__temp {
+    font-size: 120px;
+    color: #fff;
+  }
+  &__center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 40px;
+    color: #fff;
+    padding: 1%;
+  }
+  &__last {
+    padding: 1%;
+    font-size: 40px;
+    color: #fff;
+    text-align: center;
+  }
+  &__city-name {
+    font-size: 60px;
+  }
+  &__sub {
+    text-align: center;
+  }
+
+  &__cloudy {
+    text-align: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .main-info {
+    &__temp {
+      font-size: 60px;
+    }
+
+    &__center {
+      font-size: 20px;
+    }
+    &__city-name {
+      font-size: 30px;
+    }
+    &__last {
+      font-size: 20px;
+    }
+  }
+}

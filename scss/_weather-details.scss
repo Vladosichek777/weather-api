@@ -1,0 +1,24 @@
+.weather-details {
+  padding-top: 15%;
+  &__title {
+    font-size: 30px;
+    font-weight: 900;
+    color: #fff;
+    padding-left: 5%;
+  }
+
+  &__info {
+    padding-top: 5%;
+  }
+
+  &__block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 80%;
+    padding-top: 7%;
+    padding-bottom: 7%;
+    color: #fff;
+    font-size: 25px;
+  }
+}

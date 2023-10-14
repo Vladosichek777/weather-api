@@ -1,0 +1,122 @@
+@import './reset';
+@import './weather-details';
+@import './main-info';
+
+.container {
+  max-width: 2000px;
+  min-height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.weather-wrapper {
+  background-image: url('../assets/images/cloudy.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  max-width: 100vw;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+}
+
+.title {
+  font-size: 30px;
+  padding: 20px;
+  color: #fff;
+  max-width: fit-content;
+}
+
+.line {
+  height: 1px;
+  max-width: 80%;
+  background-color: #fff;
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+
+.side-info {
+  min-width: 25%;
+  padding-left: 30px;
+  padding-top: 30px;
+  background-color: rgba(110, 110, 110, 0.25);
+  box-shadow: 0 57px 76px 0 rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(40px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+
+  &__search {
+    position: relative;
+    &::after {
+      content: '';
+      width: 14%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      right: 0;
+      border-radius: 5px;
+      background-image: url(../assets/icons/search.svg);
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-color: rgba(219, 190, 144, 0.527);
+      cursor: pointer;
+    }
+  }
+  &__input {
+    display: block;
+    width: 80%;
+    padding: 2%;
+    font-size: 30px;
+    background-color: rgba(238, 235, 230, 0.527);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+  }
+
+  &__list {
+    margin-top: 5%;
+
+    &-item {
+      max-width: 80%;
+      font-size: 25px;
+      border-radius: 10px;
+      padding: 6%;
+      cursor: pointer;
+      color: #fff;
+      transition: all 0.2s;
+      &:hover {
+        background-color: rgba(214, 214, 214, 0.603);
+      }
+    }
+  }
+}
+
+.link-api {
+  margin-top: auto;
+  margin-bottom: auto;
+  img {
+    height: 90px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .container {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 800px) {
+  .link-api {
+    display: none;
+  }
+
+  .side-info {
+    padding: 0;
+  }
+}
