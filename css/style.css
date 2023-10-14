@@ -195,16 +195,22 @@ table {
 }
 
 @media (max-width: 600px) {
+  .main-info {
+    flex-direction: column;
+    align-items: center;
+  }
   .main-info__temp {
     font-size: 60px;
   }
   .main-info__center {
+    padding-top: 2%;
     font-size: 20px;
   }
   .main-info__city-name {
     font-size: 30px;
   }
   .main-info__last {
+    padding-top: 2%;
     font-size: 20px;
   }
 }

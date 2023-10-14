@@ -38,16 +38,20 @@
 
 @media (max-width: 600px) {
   .main-info {
+    flex-direction: column;
+    align-items: center;
     &__temp {
       font-size: 60px;
     }
     &__center {
+      padding-top: 2%;
       font-size: 20px;
     }
     &__city-name {
       font-size: 30px;
     }
     &__last {
+      padding-top: 2%;
       font-size: 20px;
     }
   }
