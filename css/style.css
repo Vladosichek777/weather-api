@@ -144,6 +144,7 @@ table {
 }
 .weather-details__info {
   padding-top: 5%;
+  padding-left: 5%;
 }
 .weather-details__block {
   display: flex;
@@ -158,11 +159,14 @@ table {
 
 .main-info {
   display: flex;
+  justify-content: space-around;
+  width: 80%;
   padding: 3%;
 }
 .main-info__temp {
   font-size: 120px;
   color: #fff;
+  max-width: 170px;
 }
 .main-info__center {
   display: flex;
@@ -172,6 +176,7 @@ table {
   font-size: 40px;
   color: #fff;
   padding: 1%;
+  max-width: 270px;
 }
 .main-info__last {
   padding: 1%;
@@ -212,11 +217,12 @@ table {
 }
 
 .weather-wrapper {
-  background-image: url("../assets/images/cloudy.jpg");
+  background-color: black;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   max-width: 100vw;
+  transition: all 0.3s;
 }
 
 .left {
@@ -224,6 +230,7 @@ table {
   flex-direction: column;
   align-items: start;
   justify-content: space-between;
+  min-width: 70%;
 }
 
 .title {
@@ -251,22 +258,17 @@ table {
   border: 1px solid rgba(255, 255, 255, 0.18);
 }
 .side-info__search {
-  position: relative;
+  display: flex;
+  justify-content: space-between;
 }
-.side-info__search::after {
-  content: "";
-  width: 14%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  right: 0;
+.side-info__btn {
   border-radius: 5px;
-  background-image: url(../assets/icons/search.svg);
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
   background-color: rgba(219, 190, 144, 0.527);
   cursor: pointer;
+}
+.side-info__btn-item {
+  width: 60px;
+  height: 60px;
 }
 .side-info__input {
   display: block;

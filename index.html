@@ -14,14 +14,14 @@
             <div class="left">
                 <h3 class="title">The weather</h3>
                 <div class="main-info">
-                    <p class="main-info__temp">14&#176</p>
+                    <p class="main-info__temp"></p>
                     <div class="main-info__center">
-                        <h2 class="main-info__city-name">Berlin</h2>
-                        <p class="main-info__sub">11:02 - Saturday 14/10/2023</p>
+                        <h2 class="main-info__city-name"></h2>
+                        <p class="main-info__sub"></p>
                     </div>
                     <div class="main-info__last">
-                        <img class="main-info__img" src="./assets/images/122.png" alt="">
-                        <p class="main-info__cloudy">Partly cloudy</p>
+                        <img class="main-info__img" src="" alt="icon">
+                        <p class="main-info__cloudy"></p>
                     </div>
                     <a class="link-api" href="https://www.weatherapi.com/" title="Free Weather API">
                         <img src='//cdn.weatherapi.com/v4/images/weatherapi_logo.png' alt="Weather data by WeatherAPI.com" border="0">
@@ -31,11 +31,14 @@
             <div class="side-info">
                 <div class="side-info__search">
                     <input class="side-info__input" type="text" placeholder="Seach location...">
+                    <div class="side-info__btn">
+                        <img class="side-info__btn-item" src="./assets/icons/search.svg" alt="search">
+                    </div>
                 </div>
                 <ul class="side-info__list">
                     <li class="side-info__list-item">Kyiv</li>
                     <li class="side-info__list-item">Donetsk</li>
-                    <li class="side-info__list-item">Dnipro</li>
+                    <li class="side-info__list-item">Dnepropetrovsk</li>
                     <li class="side-info__list-item">Kharkiv</li>
                 </ul>
                 <div class="line"></div>
@@ -44,15 +47,15 @@
                     <div class="weather-details__info">
                         <div class="weather-details__block">
                             <p class="weather-details__text">Cloudy</p>
-                            <p class="weather-details__value">75%</p>
+                            <p class="weather-details__value" id="cloudy">75%</p>
                         </div>
                         <div class="weather-details__block">
                             <p class="weather-details__text">Humidity</p>
-                            <p class="weather-details__value">82%</p>
+                            <p class="weather-details__value" id="humidity">82%</p>
                         </div>
                         <div class="weather-details__block">
                             <p class="weather-details__text">Wind</p>
-                            <p class="weather-details__value">25.9km/h</p>
+                            <p class="weather-details__value" id="wind">25.9km/h</p>
                         </div>
                     </div>
                 </div>
