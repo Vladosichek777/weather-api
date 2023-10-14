@@ -36,12 +36,11 @@
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .main-info {
     &__temp {
       font-size: 60px;
     }
-
     &__center {
       font-size: 20px;
     }

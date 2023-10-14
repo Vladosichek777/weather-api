@@ -194,7 +194,7 @@ table {
   text-align: center;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .main-info__temp {
     font-size: 60px;
   }
