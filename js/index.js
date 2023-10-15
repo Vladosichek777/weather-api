@@ -44,7 +44,7 @@ function setValue(city) {
       currentWeatherIcon.src = object.current.condition.icon;
       currentWeatherText.textContent = object.current.condition.text;
 
-      let weatherCode = object.current.condition.code;
+      const weatherCode = object.current.condition.code;
       if (weatherCode === 1000) {
         backImage.style.backgroundImage = "url('./assets/images/sunny.jpg')";
       } else if ((weatherCode >= 1180 && weatherCode <= 1201) || (weatherCode >= 1240 && weatherCode <= 1252) || (weatherCode >= 1273 && weatherCode <= 1276)) {
